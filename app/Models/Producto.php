@@ -23,6 +23,7 @@ class Producto extends Model
         'precio',
         'fecha_vencimiento',
         'disponible',
+        'categoria_id',
     ];
 
     // CREAMOS RELACIÓN CON EL MODELO CATEGORIA

@@ -3,10 +3,6 @@
 @section('title', 'CRUD Categorias')
 
 @section('content')
-<form action="">
-    <label for="buscar">buscar</label>
-    <input type="text" name="buscar" placeholder="Buscar por nombre">
-</form>
 <!-- FORMULARIO DE CATEGORIAS -->
 <form action="{{ route('categorias.guardarCategoria') }}" method="POST">
     @csrf
@@ -14,7 +10,7 @@
         <h3>AÑADIR CATEGORÍA DE PRODUCTO</h3>
     </div>
     <div>
-        <input type="number" id="idCategoria" name="idCategoria">
+        <input type="hidden" id="idCategoria" name="idCategoria">
     </div>
     <div>
         <label for="nombreCategoria">Nombre:</label>

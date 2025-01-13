@@ -46,11 +46,4 @@ class categoriaController extends Controller
         Categoria::find($id)->delete();
         return redirect()->route('categorias.crudCategoria')->with('success', 'Categoría eliminada correctamente.');
     }
-
-    public function buscarCategoria($id)
-    {
-        $categoria = Categoria::find($id);
-        return response()->json($categoria);
-    }
-
 }
